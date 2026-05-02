@@ -61,7 +61,12 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ['High Heart Rate', 'High Blood Pressure', 'High Temperature', 'Normal']
+              arguments:
+                values:
+                  - 'High Heart Rate'
+                  - 'High Blood Pressure'
+                  - 'High Temperature'
+                  - 'Normal'
 
   - name: high_claim_patients
     description: "Identifies patients whose total claim amount exceeds a predefined threshold."

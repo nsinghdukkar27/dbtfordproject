@@ -6,7 +6,7 @@ version: 2
 sources:
   - name: healthcare_data
     database: dbtprojectnirmal
-    schema: "{{ var('schema_name', 'dev_healthcare_data') }}"
+    schema: "{{ var('schema_name', 'prod_healthcare_dataset') }}"
     tables:
       - name: patient_data_external
         description: "External table for patient demographic data in GCS."
